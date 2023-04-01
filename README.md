@@ -198,5 +198,5 @@ public class ItemFacade {
 ```
 
 ## 一些可优化点
-1. 通过`@JsonFileSource`的测试方法只支持一个入参，以后可以拓展支持多个入参，多个入参的json可通过类似application.yml文件的`---`划分
+1. 通过`@JsonFileSource`的测试方法只支持一个入参，以后可以拓展支持多个入参，多个入参的json可通过类似application.yml文件的`---`划分 
 2. 通过`@MockDubboSpringBootTest`的测试其实还是要把整个SpringBoot都起起来，每次启动很耗时。可以尝试通过某些手段排除掉zookeeper/dubbo等，本地执行不依赖外部环境。
